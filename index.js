@@ -1,4 +1,4 @@
-//Bài 1 Viết một hàm chuyển đổi nhiệt độ từ thang Celsius chuyển sang thang đo fahrenhei.
+//Bài 1 
 function celsiusToFahrenheit() {
   const celsius = document.getElementById("numCelsius").value * 1;
 
@@ -6,7 +6,7 @@ function celsiusToFahrenheit() {
   document.getElementById("numFahrenheit").innerHTML = `${fahrenheit}`;
 }
 
-//Bài 2: Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép chuỗi đó lên 10 lần, ngăn cách nhau bởi ký tự "-".
+//Bài 2:
 function copyStr() {
   const str = document.getElementById("string").value * 1;
 
@@ -14,7 +14,7 @@ function copyStr() {
   document.getElementById("passStr").innerHTML = `${pass}`;
 }
 
-//Bài 3:Sử dụng câu lệnh if để viết 1 hàm với 2 tham số bất kỳ, kiểm tra xem 2 tham số có phải là number không và tìm ra số lớn nhất trong 2 số đó
+//Bài 3:
 function findNumber() {
   const a = document.getElementById("num1").value * 1;
   const b = document.getElementById("num2").value * 1;
@@ -36,7 +36,7 @@ function findNumber() {
   document.getElementById("compare").innerHTML = resultCompare;
 }
 
-//Bài 4  Viết 1 hàm dùng để tính giai thừa của 1 số. Kiểm tra tham số đầu vào phải là 1 số nguyên >= 0, sau đó tính giai thừa và in ra kết quả
+//Bài 4 
 function factorial() {
   const n = document.getElementById("numF").value * 1;
   if (isNaN(n) || !Number.isInteger(n) || n < 0) {
@@ -55,9 +55,7 @@ function factorial() {
   Giai thừa của ${n} là ${result}</h2>`;
 }
 
-/*Bài 5. Cho 1 chuỗi dài hơn 15 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu tiên và thêm vào dấu " …" ở cuối chuỗi.
-Tham số truyền vào là 1 chuỗi dài hơn 15 ký tự.
-Kết quả là chuỗi đó sau khi cắt đi còn 10 ký tự, cuối chuỗi có dấu " …" biểu thị là chuỗi bị cắt.*/
+/*Bài 5. .*/
 function cutChain() {
   const str = document.getElementById("string15").value;
   if (str.length <= 15) {
@@ -71,9 +69,7 @@ Chuỗi sau khi được cắt là: ${cut} `;
   }
 }
 
-//Bài 6. Viết 1 function có tác dụng biến 1 chuỗi thành chỉ viết hoa từ đầu tiên.
-//Tham số truyền vào là 1 chuỗi.
-//Kết quả là 1 chuỗi mới chỉ viết hoa từ đầu tiên. Ví dụ "morSofware" sẽ được convert thành "Morsofware".
+//Bài 6. 
 
 function firstUpperCase() {
     const str = document.getElementById("uppStr").value;
@@ -92,7 +88,7 @@ Chữ sau khi chỉnh sửa là: ${upp} `;
 }
 
 
-//Bài 7. Cho 1 mảng các số bất kỳ. Tạo ra 1 mảng mới chỉ chứa các số chẵn lấy ra từ mảng trên và sắp xếp theo thứ tự giảm dần.
+//Bài 7.
 function numEvenDesc() {
     const input = document.getElementById("arrNum").value;
     const arr=input.split(',').map(Number);
@@ -103,14 +99,7 @@ function numEvenDesc() {
 
 }
 
-/*Bài 8. Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào. Nếu hợp lệ trả về "Pass", nếu không hợp lệ trả về "Fail".
-Giả sử tham số đầu vào là 1 object có dạng như sau:
-{
-  username: "username",
-  password: "secret",
-  confirm: "secret"
-}
-Hãy kiểm tra username phải khác rỗng và không được vượt quá 20 ký tự, password phải có độ dài từ 6 đến 32 ký tự, confirm phải giống password.*/
+/*Bài 8. */
 
 function validateUser() {
     const username = document.getElementById("userInput").value;

@@ -7,154 +7,145 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
 </head>
 
-<body>
-    <h1>Bài tập 1</h1>
-
-    <div class="container  py-5">
-        <div class="row">
-            <div class="form-group col-6">
-                <label for="">Celsius</label>
-                <input type="text" class="form-control" name="" id="numCelsius">
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Bài Tập Lập Trình</h1>
+        
+        <div class="mb-5">
+            <h4 class="bg-info text-white p-2 rounded">Bài Tập 1: <br> Viết một hàm chuyển đổi nhiệt độ từ thang Celsius chuyển sang thang đo Fahrenheit.</h4>
+            <div class="row mb-3">
+                <div class="form-group col-6">
+                    <label for="numCelsius">Celsius</label>
+                    <input type="text" class="form-control" id="numCelsius">
+                </div>
+                <div class="form-group col-6">
+                    <label for="numFahrenheit">Fahrenheit</label>
+                    <output class="form-control" id="numFahrenheit"></output>
+                </div>
             </div>
-            <div class="form-group col-6">
-                <label for="">Fahrenheit</label>
-                <output type="text" class="form-control" name="" id="numFahrenheit">
-            </div>
+            <button class="btn btn-primary" onclick="celsiusToFahrenheit()">Convert</button>
         </div>
-        <button class="btn btn-danger " onclick="celsiusToFahrenheit()">Convert</button>
+
+        <hr>
+
+        <div class="mb-5">
+            <h4 class="bg-info text-white p-2 rounded">Bài Tập 2: <br> Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép chuỗi đó lên 10 lần, ngăn cách nhau bởi ký tự "-".</h4>
+            <div class="row mb-3">
+                <div class="form-group col-6">
+                    <label for="string">Mời Nhập Chuỗi</label>
+                    <input type="text" class="form-control" id="string">
+                </div>
+                <div class="form-group col-6">
+                    <label for="passStr">Pass Chuỗi</label>
+                    <output class="form-control" id="passStr"></output>
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="copyStr()">Copy</button>
+        </div>
+
+        <hr>
+
+        <div class="mb-5">
+            <h4 class="bg-info text-white p-2 rounded">Bài Tập 3: <br> Sử dụng câu lệnh if để viết 1 hàm với 2 tham số bất kỳ, kiểm tra xem 2 tham số có phải là number không và tìm ra số lớn nhất trong 2 số đó.</h4>
+            <div class="row mb-3">
+                <div class="form-group col-6">
+                    <label for="num1">Nhập Số Thứ Nhất</label>
+                    <input type="text" class="form-control" id="num1">
+                </div>
+                <div class="form-group col-6">
+                    <label for="num2">Nhập Số Thứ Hai</label>
+                    <input type="text" class="form-control" id="num2">
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="findNumber()">Largest Number</button>
+            <div id="checkNum"></div>
+            <div id="compare"></div>
+        </div>
+
+        <hr>
+
+        <div class="mb-5">
+            <h4 class="bg-info text-white p-2 rounded">Bài Tập 4: <br> Viết 1 hàm dùng để tính giai thừa của 1 số. Kiểm tra tham số đầu vào phải là 1 số nguyên >= 0, sau đó tính giai thừa và in ra kết quả.</h4>
+            <div class="row mb-3">
+                <div class="form-group col-6">
+                    <label for="numF">Nhập Số</label>
+                    <input type="text" class="form-control" id="numF">
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="factorial()">Tính Giai Thừa</button>
+            <div id="numFactorial"></div>
+        </div>
+
+        <hr>
+
+        <div class="mb-5">
+            <h4 class="bg-info text-white p-2 rounded">Bài Tập 5: <br> Cho 1 chuỗi dài hơn 15 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu tiên và thêm vào dấu " …" ở cuối chuỗi.</h4>
+            <div class="row mb-3">
+                <div class="form-group col-6">
+                    <label for="string15">Nhập Chuỗi ( > 15 Ký Tự)</label>
+                    <input type="text" class="form-control" id="string15">
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="cutChain()">Cắt Chuỗi</button>
+            <div id="cutStr"></div>
+        </div>
+
+        <hr>
+
+        <div class="mb-5">
+            <h4 class="bg-info text-white p-2 rounded">Bài Tập 6: <br> Viết 1 function có tác dụng biến 1 chuỗi thành chỉ viết hoa từ đầu tiên.</h4>
+            <div class="row mb-3">
+                <div class="form-group col-6">
+                    <label for="uppStr">Nhập Chuỗi</label>
+                    <input type="text" class="form-control" id="uppStr">
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="firstUpperCase()">Viết Hoa Chữ Cái Đầu</button>
+            <div id="uppWrite"></div>
+        </div>
+
+        <hr>
+
+        <div class="mb-5">
+            <h4 class="bg-info text-white p-2 rounded">Bài Tập 7: <br> Cho 1 mảng các số bất kỳ. Tạo ra 1 mảng mới chỉ chứa các số chẵn lấy ra từ mảng trên và sắp xếp theo thứ tự giảm dần.</h4>
+            <div class="row mb-3">
+                <div class="form-group col-6">
+                    <label for="arrNum">Nhập Mảng (vd: 1,2,3,4,5)</label>
+                    <input type="text" class="form-control" id="arrNum">
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="numEvenDesc()">Sắp Xếp Số Chẵn</button>
+            <div id="sort"></div>
+        </div>
+
+        <hr>
+
+        <div class="mb-5">
+            <h4 class="bg-info text-white p-2 rounded">Bài Tập 8: <br> Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào.</h4>
+            <p>Hãy kiểm tra username phải khác rỗng và không được vượt quá 20 ký tự, password phải có độ dài từ 6 đến 32 ký tự, confirm phải giống password.</p>
+            <div class="row mb-3">
+                <div class="form-group col-6">
+                    <label for="userInput">Nhập Username</label>
+                    <input type="text" class="form-control" id="userInput">
+                </div>
+                <div class="form-group col-6">
+                    <label for="passwordInput">Nhập Password</label>
+                    <input type="text" class="form-control" id="passwordInput">
+                </div>
+                <div class="form-group col-6">
+                    <label for="confirmInput">Nhập Confirm Password</label>
+                    <input type="text" class="form-control" id="confirmInput">
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="validateUser()">Register</button>
+            <div id="register"></div>
+        </div>
 
     </div>
-    <h2 class="text-center">-----------------------------------------------------------------</h2>
 
-    <h1>Bài tập 2</h1>
-
-    <div class="container  py-5">
-        <div class="row">
-            <div class="form-group col-6">
-                <label for="">Mời nhập chuỗi</label>
-                <input type="text" class="form-control" name="" id="string">
-            </div>
-            <div class="form-group col-6">
-                <label for="">Pass chuỗi</label>
-                <output type="text" class="form-control" name="" id="passStr">
-            </div>
-        </div>
-        <button class="btn btn-danger " onclick="copyStr()">Copy</button>
-
-    </div>
-    <h2 class="text-center">-----------------------------------------------------------------</h2>
-
-    <h1>Bài tập 3</h1>
-
-    <div class="container  py-5">
-        <div class="row">
-            <div class="form-group col-6">
-                <label for="">Nhập số thứ nhất</label>
-                <input type="text" class="form-control" name="" id="num1">
-            </div>
-            <div class="form-group col-6">
-                <label for="">Nhập số thứ hai</label>
-                <input type="text" class="form-control" name="" id="num2">
-            </div>
-        </div>
-        <button class="btn btn-danger " onclick="findNumber()">Largest Number</button>
-        <div id="checkNum"></div>
-        <div id="compare"></div>
-
-    </div>
-    <h2 class="text-center">-----------------------------------------------------------------</h2>
-
-
-
-    <h1>Bài tập 4</h1>
-
-    <div class="container  py-5">
-        <div class="row">
-            <div class="form-group col-6">
-                <label for="">Nhập số </label>
-                <input type="text" class="form-control" name="" id="numF">
-            </div>
-        </div>
-        <button class="btn btn-danger " onclick="factorial()">Tính giai thừa</button>
-
-        <div id="numFactorial"></div>
-    </div>
-    <h2 class="text-center">-----------------------------------------------------------------</h2>
-
-    
-    <h1>Bài tập 5</h1>
-
-    <div class="container  py-5">
-        <div class="row">
-            <div class="form-group col-6">
-                <label for="">Nhập chuỗi</label>
-                <input type="text" class="form-control" name="" id="string15">
-            </div>
-        </div>
-        <button class="btn btn-danger " onclick="cutChain()">Cắt chuỗi</button>
- 
-        <div id="cutStr"></div>
-    </div>
-    <h2 class="text-center">-----------------------------------------------------------------</h2>
-
-    <h1>Bài tập 6</h1>
-
-    <div class="container  py-5">
-        <div class="row">
-            <div class="form-group col-6">
-                <label for="">Nhập chuỗi</label>
-                <input type="text" class="form-control" name="" id="uppStr">
-            </div>
-        </div>
-        <button class="btn btn-danger " onclick="firstUpperCase()">Viết hoa chữ cái đầu</button>
- 
-        <div id="uppWrite"></div>
-    </div>
-    <h2 class="text-center">-----------------------------------------------------------------</h2>
-
-    <h1>Bài tập 7</h1>
-
-    <div class="container  py-5">
-        <div class="row">
-            <div class="form-group col-6">
-                <label for="">Nhập mảng</label>
-                <input type="text" class="form-control" name="" id="arrNum" placeholder="1,2,3,4,5">
-            </div>
-        </div>
-        <button class="btn btn-danger " onclick="numEvenDesc()">Sắp xếp số chẵn từ lớn đến bé</button>
- 
-        <div id="sort"></div>
-    </div>
-    <h2 class="text-center">-----------------------------------------------------------------</h2>
-
-    <h1>Bài tập 8</h1>
-
-    <div class="container  py-5">
-        <div class="row">
-            <div class="form-group col-8">
-                <label for="">Nhập Username</label>
-                <input type="text" class="form-control" name="" id="userInput">
-            </div>
-            <div class="form-group col-8">
-                <label for="">Nhập Password</label>
-                <input type="text" class="form-control" name="" id="passwordInput">
-            </div>
-            <div class="form-group col-8">
-                <label for="">Nhập Confirm Password </label>
-                <input type="text" class="form-control" name="" id="confirmInput">
-            </div>
-        </div>
-        <button class="btn btn-danger " onclick="validateUser()">Register</button>
- 
-        <div id="register"></div>
-    </div>
-    <h2 class="text-center">-----------------------------------------------------------------</h2>
-
+    <script src="./index.js"></script>
 </body>
-<script src="./index.js"></script>
 
 </html>
