@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <h1>Bài tập 1</h1>
+
+    <div class="container  py-5">
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="">Celsius</label>
+                <input type="text" class="form-control" name="" id="numCelsius">
+            </div>
+            <div class="form-group col-6">
+                <label for="">Fahrenheit</label>
+                <output type="text" class="form-control" name="" id="numFahrenheit">
+            </div>
+        </div>
+        <button class="btn btn-danger " onclick="celsiusToFahrenheit()">Convert</button>
+
+    </div>
+    <h2 class="text-center">-----------------------------------------------------------------</h2>
+
+    <h1>Bài tập 2</h1>
+
+    <div class="container  py-5">
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="">Mời nhập chuỗi</label>
+                <input type="text" class="form-control" name="" id="string">
+            </div>
+            <div class="form-group col-6">
+                <label for="">Pass chuỗi</label>
+                <output type="text" class="form-control" name="" id="passStr">
+            </div>
+        </div>
+        <button class="btn btn-danger " onclick="copyStr()">Copy</button>
+
+    </div>
+    <h2 class="text-center">-----------------------------------------------------------------</h2>
+
+    <h1>Bài tập 3</h1>
+
+    <div class="container  py-5">
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="">Nhập số thứ nhất</label>
+                <input type="text" class="form-control" name="" id="num1">
+            </div>
+            <div class="form-group col-6">
+                <label for="">Nhập số thứ hai</label>
+                <input type="text" class="form-control" name="" id="num2">
+            </div>
+        </div>
+        <button class="btn btn-danger " onclick="findNumber()">Largest Number</button>
+        <div id="checkNum"></div>
+        <div id="compare"></div>
+
+    </div>
+    <h2 class="text-center">-----------------------------------------------------------------</h2>
+
+
+
+    <h1>Bài tập 4</h1>
+
+    <div class="container  py-5">
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="">Nhập số </label>
+                <input type="text" class="form-control" name="" id="numF">
+            </div>
+        </div>
+        <button class="btn btn-danger " onclick="factorial()">Tính giai thừa</button>
+
+        <div id="numFactorial"></div>
+    </div>
+    <h2 class="text-center">-----------------------------------------------------------------</h2>
+
+    
+    <h1>Bài tập 5</h1>
+
+    <div class="container  py-5">
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="">Nhập chuỗi</label>
+                <input type="text" class="form-control" name="" id="string15">
+            </div>
+        </div>
+        <button class="btn btn-danger " onclick="cutChain()">Cắt chuỗi</button>
+ 
+        <div id="cutStr"></div>
+    </div>
+    <h2 class="text-center">-----------------------------------------------------------------</h2>
+
+    <h1>Bài tập 6</h1>
+
+    <div class="container  py-5">
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="">Nhập chuỗi</label>
+                <input type="text" class="form-control" name="" id="uppStr">
+            </div>
+        </div>
+        <button class="btn btn-danger " onclick="firstUpperCase()">Viết hoa chữ cái đầu</button>
+ 
+        <div id="uppWrite"></div>
+    </div>
+    <h2 class="text-center">-----------------------------------------------------------------</h2>
+
+    <h1>Bài tập 7</h1>
+
+    <div class="container  py-5">
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="">Nhập mảng</label>
+                <input type="text" class="form-control" name="" id="arrNum" placeholder="1,2,3,4,5">
+            </div>
+        </div>
+        <button class="btn btn-danger " onclick="numEvenDesc()">Sắp xếp số chẵn từ lớn đến bé</button>
+ 
+        <div id="sort"></div>
+    </div>
+    <h2 class="text-center">-----------------------------------------------------------------</h2>
+
+    <h1>Bài tập 8</h1>
+
+    <div class="container  py-5">
+        <div class="row">
+            <div class="form-group col-8">
+                <label for="">Nhập Username</label>
+                <input type="text" class="form-control" name="" id="userInput">
+            </div>
+            <div class="form-group col-8">
+                <label for="">Nhập Password</label>
+                <input type="text" class="form-control" name="" id="passwordInput">
+            </div>
+            <div class="form-group col-8">
+                <label for="">Nhập Confirm Password </label>
+                <input type="text" class="form-control" name="" id="confirmInput">
+            </div>
+        </div>
+        <button class="btn btn-danger " onclick="validateUser()">Register</button>
+ 
+        <div id="register"></div>
+    </div>
+    <h2 class="text-center">-----------------------------------------------------------------</h2>
+
+</body>
+<script src="./index.js"></script>
+
+</html>
