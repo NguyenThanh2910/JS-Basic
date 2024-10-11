@@ -8,7 +8,7 @@ function celsiusToFahrenheit() {
 
 //Bài 2:
 function copyStr() {
-  const str = document.getElementById("string").value * 1;
+  const str = document.getElementById("string").value;
 
   const pass = Array(10).fill(str).join("-");
   document.getElementById("passStr").innerHTML = `${pass}`;
